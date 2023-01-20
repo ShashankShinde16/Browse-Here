@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/home_btn"
+                android:src="@drawable/home_ic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/webIC"
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/topSearchField"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_design"
+                android:hint="@string/Search_url"
+                android:paddingHorizontal="5dp"
+                android:singleLine="true"
+                android:textColorHint="#757575"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/topSearchButton"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/go_btn"
+                android:src="@drawable/search_ic"
+                tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tabsBtn"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="@string/one"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/custom_tab_view"
+                tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+            <ImageButton
+                android:id="@+id/refreshBtn"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/refresh_btn"
+                android:src="@drawable/refresh_ic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/moreTools"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/more_btn"
+                android:src="@drawable/more_options_ic"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleY="0.5"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/myView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

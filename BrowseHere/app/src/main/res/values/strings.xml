@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Browse Here</string>
+    <string name="Search_url">Search</string>
+    <string name="go_btn">search button</string>
+    <string name="more_btn">Setting</string>
+    <string name="home_btn">Home button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_btn">Save</string>
+    <string name="next_btn">Next</string>
+    <string name="back_btn">Back</string>
+    <string name="bookmark_btn">Bookmark</string>
+    <string name="desktop_mode_btn">Desktop</string>
+    <string name="fullscreen_btn">Fullscreen</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="bookmark_name">Bookmark Name</string>
+    <string name="view_all">View All</string>
+    <string name="all_bookmarks">All Bookmarks</string>
+    <string name="refresh_btn">Referesh</string>
+    <string name="tab_name">tab</string>
+    <string name="one">1</string>
+</resources>
